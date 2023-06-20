@@ -54,9 +54,12 @@ const poll = {
         console.log(answer);
 
         //check and display answers
-        if (answer >= 0 && answer <= 3) {
+        /*if (answer >= 0 && answer <= 3) {
             this.answers[answer]++;
-        }
+        }*/
+        //better way
+        typeof answer == 'number' && answer < this.answers.length && this.answers[answer]++;
+
         this.displayResults('array');
 
         this.displayResults('string');
