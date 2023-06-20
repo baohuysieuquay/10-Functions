@@ -58,6 +58,7 @@ const poll = {
             this.answers[answer]++;
         }
         this.displayResults('array');
+
         this.displayResults('string');
 
 
